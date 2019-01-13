@@ -11,7 +11,7 @@ import { NgModule } from '@angular/core';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { HttpClientModule} from '@angular/common/http';
 import { BsDropdownModule, } from 'ngx-bootstrap/dropdown';
-import { TabsModule, BsDatepickerModule, PaginationComponent, PaginationModule } from 'ngx-bootstrap';
+import { TabsModule, BsDatepickerModule, PaginationComponent, PaginationModule, ButtonsModule} from 'ngx-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -60,6 +60,7 @@ export function tokenGetter() {
       BsDatepickerModule.forRoot(),
       PaginationModule.forRoot(),
       TabsModule.forRoot(),
+      ButtonsModule.forRoot(),
       RouterModule.forRoot(appRoutes),
       NgxGalleryModule,
       FileUploadModule,
