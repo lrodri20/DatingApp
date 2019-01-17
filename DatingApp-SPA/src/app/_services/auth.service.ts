@@ -17,8 +17,7 @@ export class AuthService {
   currentPhotoUrl = this.photoUrl.asObservable();
   constructor(private http: HttpClient) {}
   // it updates the photo url dinamaclly
-  changeMemberPhoto(photoUrl: string)
-  {
+  changeMemberPhoto(photoUrl: string) {
     this.photoUrl.next(photoUrl);
   }
   login(model: any) {
