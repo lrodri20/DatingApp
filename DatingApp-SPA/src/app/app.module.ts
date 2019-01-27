@@ -1,3 +1,4 @@
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberCardComponent } from './members/member-card/member-card.component';
@@ -31,6 +32,7 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
 import { FileUploadModule } from 'ng2-file-upload';
 import { TimeAgoPipe } from 'time-ago-pipe';
 import { ListsResolver } from './_resolver/list.resolver';
+import { MessagesResolver } from './_resolver/messages.resolver';
 
 
 export function tokenGetter() {
@@ -50,7 +52,8 @@ export function tokenGetter() {
       MemberDetailComponent,
       MemberEditComponent,
       PhotoEditorComponent,
-      TimeAgoPipe
+      TimeAgoPipe,
+      MemberMessagesComponent
    ],
    imports: [
       BrowserModule,
@@ -83,7 +86,8 @@ export function tokenGetter() {
       MemberListResolver,
       MemberEditResolver,
       PreventUnSavedChanges,
-      ListsResolver
+      ListsResolver,
+      MessagesResolver,
    ],
    bootstrap: [
       AppComponent
