@@ -14,7 +14,8 @@ namespace DatingApp.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.3-rtm-32065");
+                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
                 {
@@ -72,7 +73,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("PublicId");
 
-                    b.Property<string>("URL");
+                    b.Property<string>("Url");
 
                     b.Property<int>("UserId");
 
